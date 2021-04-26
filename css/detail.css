@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.container {
+    padding-top: 100px;
+    flex: 2;
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 20px;
+}
+
+.card {
+    margin-right: 10px;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.container > div:first-child {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.container > div:nth-child(2) {
+    width: 30%;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-block .similar-chart, .right-block .dashboard {
+    flex: 1;
+    background: #fff;
+    max-height: 20vh;
+    overflow: auto;
+}
+
+.right-block .similar-chart {
+    margin-bottom: 20px;
+}
+
+.right-block .dashboard {
+    padding: 10px;
+}
+
+.backgroundOpacity {
+    fill: rgba(0,0,0,0.1);
+}
